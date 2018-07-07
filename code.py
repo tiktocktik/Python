@@ -27,7 +27,8 @@ else :
 #loop to generate lastprice traded and the symbol
 for key in ['lastPrice', 'symbol']:
     print(test[key])
-
+    
+percentage = (difference/tot)*100
 print("Quantity Purchased :" , qty)
 print("Purchased at :" , user_price)
 
@@ -35,4 +36,4 @@ print("Total Price : %.2f" % tot)
 print("Current Price :" , present_value)
 
 print("Profit / Loss : %.2f" % difference)
-
+print(percentage)
